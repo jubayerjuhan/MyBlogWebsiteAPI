@@ -28,8 +28,8 @@ class Post {
         return posts;
     }
 
-    storeData(rawData) {
-        let data = JSON.stringify(rawData);
+    storeData(raData) {
+        let data = JSON.stringify(raData);
         fs.writeFileSync(PATH, data);
     }
 
