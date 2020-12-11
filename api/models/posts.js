@@ -16,6 +16,10 @@ class Post {
 
     add(newPost) {
         //!Add New Post
+        let doubleSlash = newPost;
+        console.log(doubleSlash.post_image);
+        let image = newPost.post_image;
+        doubleSlash["post_image"] = image.replace("\\","/");
         const currentPost = this.readData();
         currentPost.unshift(newPost);
         this.storeData(currentPost);

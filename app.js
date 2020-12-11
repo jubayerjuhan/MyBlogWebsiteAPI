@@ -56,7 +56,7 @@ app.get("/api/posts/:post_id", (req, res) => {
 })
 
 
-app.post("/api/posts", upload.single('post-image'), (req, res) =>{
+app.post("/api/posts", upload.single('post_image'), (req, res) =>{
     const newPoost = {
         "id" : `${Date.now()}`,
         "title" : req.body.title,
